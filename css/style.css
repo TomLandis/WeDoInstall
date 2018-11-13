@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css?family=Allerta+Stencil|Noto+Sans+KR');
+
+body, h1, h2{
+  font-family: 'Allerta Stencil', sans-serif;
+}
+.screenShotGrid{
+  
+  background-repeat:no-repeat;
+  padding: 40px;
+  justify-items:center;
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 80px;
+  height: 1000px;
+  align-content:center;
+  background-image:url('https://source.unsplash.com/McBWND3SIZs/3000x1000');
+}  
+.screenShot{
+  padding: 1em;
+  transition:all ease 0.2s;
+  text-align:center;
+  display:grid;
+  opacity: 0.8;
+  background-image:url('https://source.unsplash.com/fkEc08fYaQI/');  
+}
+.screenShot:hover{
+  opacity:1;
+}
+.screenShot img{
+  height: 300px;
+  width:300px;
+  border-radius:50%;
+  margin: 0 auto;
+}
+.screenShot p{
+  font-size: 2em;
+  background-color:rgba(255, 255, 255, 0.6);
+}
+#intro {
+  padding: 2em;
+  padding-bottom: 7em;
+  background-color:#cccccc;
+  height: 600px;
+  width:auto;
+  background-image:url('https://source.unsplash.com/rK5pVY1Op5A/3000x1000');
+  background-repeat: no-repeat;
+  background-position:center;
+  background-opacity:0.7;
+}
+.screenShot h3{
+  font-size: 3em;
+  color: black;
+  -webkit-text-fill-color: #f4c842; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+}
+h1{
+  font-size: 8em;
+  text-align:center;
+  color: black;
+  -webkit-text-fill-color: #f4c842; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+}
+section{
+  margin:0;
+}
+.socIc{
+  color:#f4c842;
+  text-align:center;
+  margin-top:300px;
+  color: black;
+  -webkit-text-fill-color: #f4c842; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+}
+.socIc i{
+  margin: 0.2em;
+  transition: all ease-in-out 0.1s;
+}
+.socIc i:hover{
+  transform:scale(1.2, 1.2);
+  cursor:pointer;
+}
+h2{
+  text-align:center;
+  font-size: 5.5em;
+  color: black;
+  -webkit-text-fill-color: #f4c842; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+}
+.cont{
+  background-color:#cccccc;
+  display:flex;
+  padding: 3em;
+  text-align:center;
+  align-items:center;
+  justify-content:space-around;
+}
+.serv{
+  transition: all ease 0.2s;
+  border: 1px dotted black;
+  background-color:#f2f2f2;
+max-width: 26vw;
+  padding: 1.2em;
+  display:flex;
+  flex-direction:column;
+  
+}
+.serv h3{
+  font-size: 2em;
+}
+.serv i{
+  color: black;
+  -webkit-text-fill-color: #f4c842; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+  
+}
+.serv:hover{
+  transform:scale(1.2);
+}
+.ab{
+  padding: 3em;
+  text-align:center;  
+}
+.ab p{
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 3.3em;
+  line-height: 4em;
+}
+.ab p a{
+  color:black;
+  text-decoration:none;
+  background-color:#f4c842;
+  border: 1px dashed black;
+  
+  padding: 0.3em;
+}
+form {
+  font-size: 3em;
+ display:flex;
+  flex-direction: column;
+  min-height: 400px;
+  padding: 3em;
+  
+}
+input{
+  font-size: 2em;
+}
+textarea{
+  font-size: 1.2em;
+  margin: 1em;
+}
+#submit{
+  width: 500px;
+  background-color:#f4c842;
+  margin: 1em;
+}
+@media (max-width: 1300px){
+  .screenShotGrid{
+    grid-template-columns: 1fr;
+    height:auto;
+    
+  }
+}
+@media (max-width: 730px){
+  .cont{
+    flex-direction: column;
+  }
+  .serv{
+    max-width: 80vw;
+  }
+  .ab p, form{
+    font-size:1em;
+    }
+  }
+.break{
+  margin-top: 200px;
+}
+#submit{
+  width:auto;
+}
+}
